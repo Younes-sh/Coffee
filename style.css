@@ -1,0 +1,135 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/*                                    head           */
+.head{
+    max-width: 100%;
+    height: 600px;
+    background-image: url(../Photos/background/coffee-head.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: -130px;
+}
+
+nav div{
+    max-width: 50%;
+    height:100%;
+    margin-top: 20px;
+}
+.menu{
+    position: fixed;
+    background-attachment: fixed;
+}
+.menu-right{
+    margin-left: 1400px;
+}
+nav li{
+    display: inline-block;
+    margin: 10px 50px;
+    font-size: 20px;
+}
+nav a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 2px 15px;
+    border: solid rgb(136, 136, 24) 0.05em;
+    border-radius: 15px;
+}
+nav a:hover{
+    color: rgb(216, 187, 21);
+    background-color: rgb(31, 18, 3) ;
+    padding: 2px 15px;
+    border-radius: 12px;
+    transition: 0.5s;
+}
+.text-container{
+    max-width: 10%;
+    height:100%;
+    margin: 110px;
+}
+h1{
+     max-width: 100%;
+    font-size: 11vw;
+    text-shadow: #b46a1bb7 4px 4px 7px;
+    color: rgb(29, 14, 3);
+    margin-top: 200px;
+    display: inline-block;
+}
+/*                       main          */
+main{
+    max-width: 100%;
+    height: 900px;
+    background-image: url(../Photos/background/coffee-desk-main.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-card{
+    max-width: 90%;
+    height: 900px;
+    padding: 10px;
+    margin-left: 99px;
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+    /* background-color: rgba(240, 248, 255, 0.397); */
+}
+.container-card img{
+    margin-top: 66px;
+    padding: 5px;
+}
+
+main img{
+    max-width: 100%;
+}
+main img:hover{
+    transform: scale(1.05);
+    transition: ease-in-out 1s;
+}
+
+/*                        Footer        */
+
+
+footer{
+    max-width: 100%;
+    height: 500px;
+    background-color: #241506fd;
+    text-align: center;
+}
+footer .container{
+    max-width: 40%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content:space-around;
+    color: rgb(167, 127, 75);
+}
+footer div{
+    max-width: 200px;
+    height: 300px;
+    margin-top: 100px;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: left;
+}
+footer p{
+    margin-top: 12px;
+}
+.socialmedia i{
+    font-size: 30px;
+    padding: 4px;
+    color: rgba(238, 130, 238, 0.651);
+}
+footer .copyright{
+    width: 900px;
+    height: 30px;
+    position: absolute;
+    margin-top: 370px;
+    padding: 6px 2px 0px 9px;
+    background-color: rgba(240, 248, 255, 0.438);
+    color: aliceblue;
+}
