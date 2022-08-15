@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/7fd1974617.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
+    <button class="btn-menu_burger close open">open</button>
     <div class="head">
-        <nav>
+        <div class="nav">
             <div class="menu-left menu">
                 <ul>
                     <li><a href="">Coffee</a></li>
@@ -18,7 +19,6 @@
                     <li><a href="">Esperso</a></li>
                     <li>
                         <a aria-controls="" href="">Product</a>
-                        <div></div>
                     </li>
                 </ul>
             </div>
@@ -28,38 +28,41 @@
                     <li><a href="">Language</a></li>
                 </ul>
             </div>
-            <div class="text-container">
-                <h1>COFFEE</h1>
-            </div>
-        </nav>
+        </div>
+        <div class="text-container">
+            <h1>COFFEE</h1>
+        </div>
     </div>
     <main>
         <!--                        Card Coffee        -->
-        <di class="container-card">
+        <di class="container-cards">
+           
+            <div class="row">
+                <div class="card col-xs-12 col-md-3 col-lg-3">
+                    <a href="">
+                        <img id="coffee1"  src="coffee-1.jpg" alt="coffee1">
+                    </a>
+                </div>
+              
+                <div class="card col-xs-12 col-md-3 col-lg-3">
+                    <a href="">
+                        <img id="coffee2"  src="coffee-2.jpg" alt="coffee2">
+                    </a>
+                </div>
             
-            <div>
-                <a href="">
-                <img id="coffee1" onmouseover="setNewImage1()" onmouseout="setOldImage1()" src="../photos/coffees-non-color/coffee-1.jpg" alt="coffee1">
-                </a>
+                <div class="card col-xs-12 col-md-3 col-lg-3">
+                   <a href="">
+                    <img id="coffee3"  src="coffee-3.jpg" alt="coffee3">
+                   </a>
+                </div>
+            
+                <div class="card col-xs-12 col-md-3 col-lg-3">
+                    <a href="">
+                        <img id="coffee4"  src="coffee-4.jpg" alt="coffee4">
+                    </a>
+                </div>
             </div>
-          
-            <div>
-                <a href="">
-                    <img id="coffee2" onmouseover="setNewImage2()" onmouseout="setOldImage2()" src="../photos/coffees-non-color/coffee-2.jpg" alt="coffee2">
-                </a>
-            </div>
-        
-            <div>
-               <a href="">
-                <img id="coffee3" onmouseover="setNewImage3()" onmouseout="setOldImage3()" src="../photos/coffees-non-color/coffee-3.jpg" alt="coffee3">
-               </a>
-            </div>
-        
-            <div>
-                <a href="">
-                    <img id="coffee4" onmouseover="setNewImage4()" onmouseout="setOldImage4()" src="../photos/coffees-non-color/coffee-4.jpg" alt="coffee4">
-                </a>
-            </div>
+           
         
         </di>
   
@@ -102,6 +105,6 @@
         
        
     </footer>
-    <script src="../JavaScript/index.js"></script>
+    <script src=""></script>
 </body>
 </html>

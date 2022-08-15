@@ -3,92 +3,96 @@
     padding: 0%;
     box-sizing: border-box;
 }
-
+body {
+    background-color: black;
+}
+/* btn  menu burger */
+.btn-menu_burger {
+    width: 100px;
+    height: 50px;
+    font-size: 25px;
+    display: none;
+    position: absolute;
+}
 /*                                    head           */
 .head{
-    max-width: 100%;
-    height: 600px;
-    background-image: url(../Photos/background/coffee-head.jpg);
+    width: 100%;
+    height: 700px;
+    background-image: url(coffee-head.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin-top: -130px;
+    display: flex;
+
+}
+.head .nav {
+    padding: 20px 50px;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
 }
 
-nav div{
-    max-width: 50%;
-    height:100%;
-    margin-top: 20px;
-}
-.menu{
-    position: fixed;
-    background-attachment: fixed;
-}
-.menu-right{
-    margin-left: 1400px;
-}
-nav li{
+
+.head .nav  li{
+    list-style-type: none;
     display: inline-block;
-    margin: 10px 50px;
     font-size: 20px;
 }
-nav a{
+.head .nav a{
     text-decoration: none;
     color: aliceblue;
     padding: 2px 15px;
     border: solid rgb(136, 136, 24) 0.05em;
     border-radius: 15px;
 }
-nav a:hover{
+.head .nav a:hover{
     color: rgb(216, 187, 21);
     background-color: rgb(31, 18, 3) ;
     padding: 2px 15px;
     border-radius: 12px;
     transition: 0.5s;
 }
-.text-container{
-    max-width: 10%;
-    height:100%;
-    margin: 110px;
-}
-h1{
-     max-width: 100%;
+
+.head h1{
     font-size: 11vw;
     text-shadow: #b46a1bb7 4px 4px 7px;
     color: rgb(29, 14, 3);
-    margin-top: 200px;
+    margin: 200px 170px ;
     display: inline-block;
 }
 /*                       main          */
 main{
-    max-width: 100%;
-    height: 900px;
-    background-image: url(../Photos/background/coffee-desk-main.png);
+    width: 100%;
+    height: auto;
+    background-image: url(coffee-desk-main.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.container-card{
-    max-width: 90%;
+.container-cards{
+    width: 100%;
     height: 900px;
-    padding: 10px;
-    margin-left: 99px;
+    padding: 70px ;
     display: flex;
     justify-content:space-around;
-    text-align: center;
-    /* background-color: rgba(240, 248, 255, 0.397); */
-}
-.container-card img{
-    margin-top: 66px;
-    padding: 5px;
 }
 
-main img{
-    max-width: 100%;
+main .container-cards .card {
+    width: 350px;
+    height: auto;
+}
+.container-cards img{
+    width: 100%;
+    height: auto;
 }
 main img:hover{
     transform: scale(1.05);
-    transition: ease-in-out 1s;
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+    filter: grayscale();
 }
 
 /*                        Footer        */
@@ -133,3 +137,65 @@ footer .copyright{
     background-color: rgba(240, 248, 255, 0.438);
     color: aliceblue;
 }
+
+
+
+
+/* responsive */
+
+/* For desktop: */
+.row::after {
+    content: "";
+    clear: both;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+@media screen and (max-width:567px) {
+    .col-sx-1 {width: 8.33%;}
+    .col-sx-2 {width: 16.66%;}
+    .col-sx-3 {width: 25%;}
+    .col-sx-4 {width: 33.33%;}
+    .col-sx-5 {width: 41.66%;}
+    .col-sx-6 {width: 50%;}
+    .col-sx-7 {width: 58.33%;}
+    .col-sx-8 {width: 66.66%;}
+    .col-sx-9 {width: 75%;}
+    .col-sx-10 {width: 83.33%;}
+    .col-sx-11 {width: 91.66%;}
+    .col-sx-12 {width: 100%;}
+}
+@media screen and (min-width:765px) {
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
+}
+@media screen and (max-width:992px) {
+    .col-lg-1 {width: 8.33%;}
+    .col-lg-2 {width: 16.66%;}
+    .col-lg-3 {width: 25%;}
+    .col-lg-4 {width: 33.33%;}
+    .col-lg-5 {width: 41.66%;}
+    .col-lg-6 {width: 50%;}
+    .col-lg-7 {width: 58.33%;}
+    .col-lg-8 {width: 66.66%;}
+    .col-lg-9 {width: 75%;}
+    .col-lg-10 {width: 83.33%;}
+    .col-lg-11 {width: 91.66%;}
+    .col-lg-12 {width: 100%;}
+}
+
+
+
+/* For mobile phones: */
